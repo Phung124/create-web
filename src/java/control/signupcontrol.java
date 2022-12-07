@@ -36,6 +36,7 @@ public class signupcontrol extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
        String user = request.getParameter("user");
        String pass = request.getParameter("pass");
+       String email = request.getParameter("email");
        String repass = request.getParameter("repass");
        
         if (!pass.equals(repass)) {
@@ -45,7 +46,7 @@ public class signupcontrol extends HttpServlet {
         account a =dao.checkaccount(user);
             if (a==null) {
                 // dc sihnup
-                dao.Signup(user, pass);
+                dao.Signup(user, pass, email);
                 request.getRequestDispatcher("Homecontrol").forward(request, response);
                 
             } else {

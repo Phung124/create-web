@@ -15,17 +15,14 @@ public class account {
     private String user;
     private String pass;
     private int admin;
+    private String email;
 
-    public account(int id, String user, String pass, int admin) {
+    public account(int id, String user, String pass, int admin, String email) {
         this.id = id;
         this.user = user;
         this.pass = pass;
         this.admin = admin;
-    }
-
-  
-
-    public account() {
+        this.email = email;
     }
 
     public int getId() {
@@ -60,6 +57,13 @@ public class account {
         this.admin = admin;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
     
 
   

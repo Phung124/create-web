@@ -22,7 +22,7 @@ function getTime(dealine) {
 }
 
 setInterval(() => {
-    getTime("2022/12/01")
+    getTime("2022/12/30")
 }, 1000);
 
 // totop

@@ -42,7 +42,8 @@
            <form action="signup"  method="post" class="form-signup">
                
 
-                <input name ="user" type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">         
+                <input name ="user" type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">   
+                 <input name="email" type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
                 <input name ="pass" type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
                 <input name ="repass" type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus="">
 
