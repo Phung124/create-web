@@ -31,7 +31,7 @@
                 <div class="col-xs-12 col-lg-3 col-md-3 col-sm-5 col-xs-12">
                     <div class="footer__widget">
 
-                        <h6>Chính sách</h6>S
+                        <h6>Chính sách</h6>
                         <ul class="list-menu">
                             <li>
                                 <i class="fa fa-angle-right"></i><a href="#">Sản phẩm</a>

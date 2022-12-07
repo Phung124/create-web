@@ -152,31 +152,13 @@
         <div class="container">
             <div class="row">
                 <div class="categories__slider owl-carousel">
+               <c:forEach items = "${listP}" var = "p">
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/hoa.jpg">
-                            <h5><a href="shop-details.html">Fresh Fruit</a></h5>
+                        <div class="categories__item set-bg" data-setbg="${p.imsges}">
+                            <h5><a href="detail?id=${p.id}">${p.name}</a></h5>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="shop-details.html">Dried Fruit</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Vegetables</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="shop-details.html">drink fruits</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="shop-details.html">drink fruits</a></h5>
-                        </div>
-                    </div>
+                    </c:forEach>
                 </div>
             </div>
         </div>
@@ -193,7 +175,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Featured Product</h2>
+                        <h2> Product</h2>
                     </div>
                     <div class="featured__controls">
                          
